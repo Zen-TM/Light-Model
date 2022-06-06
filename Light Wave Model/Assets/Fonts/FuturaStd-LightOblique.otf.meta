@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 5efdf70c2ba2ff0479c147d603dd367c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Futura Std
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f394c7def865d3149a42bfec5d377e6a, type: 3}
+  - {fileID: 12800000, guid: a35819c7b704b4748bb03a1ac7c34218, type: 3}
+  - {fileID: 12800000, guid: fb2e857165dc45d4c98cf209aa900d85, type: 3}
+  - {fileID: 12800000, guid: a5ad4691b3c0dc248b297f9baeb3ce71, type: 3}
+  - {fileID: 12800000, guid: 2cdd8386fc658ec45a2fbe74bd3e8fad, type: 3}
+  - {fileID: 12800000, guid: 6153b46a0878183428a55124da391ed5, type: 3}
+  - {fileID: 12800000, guid: 3593c91474dd35f47bbb335977ff8f52, type: 3}
+  - {fileID: 12800000, guid: 916d2147d5812264b8cb022253c182c5, type: 3}
+  - {fileID: 12800000, guid: e50383d41ef0fc943a814482dc646165, type: 3}
+  - {fileID: 12800000, guid: f4fe9717dc2b53147ae4832b04d3f0b1, type: 3}
+  - {fileID: 12800000, guid: b554ee2c6b5bddb44bdc4f4b22587fd3, type: 3}
+  - {fileID: 12800000, guid: 41fb27251068868449c40d38fd40a77f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
