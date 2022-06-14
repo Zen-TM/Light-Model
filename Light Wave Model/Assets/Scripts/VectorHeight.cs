@@ -12,13 +12,11 @@ public class VectorHeight : MonoBehaviour
     private float vectorDiameter = 0.2f;
     private float seperatingDistance;
 
-    // Start is called before the first frame update
     void Start()
     {
         seperatingDistance = lightWave.GetComponent<LightWaveScript>().seperatingDistance;
     }
 
-    // Update is called once per frame
     void Update()
     {
         standardHeight = currentTime + int.Parse(this.name) * seperatingDistance;

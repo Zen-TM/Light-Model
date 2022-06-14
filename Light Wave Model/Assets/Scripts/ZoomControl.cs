@@ -10,14 +10,12 @@ public class ZoomControl : MonoBehaviour
     public GameObject pauseIcon;
     private float zoomDistance;
 
-    // Start is called before the first frame update
     void Start()
     {
         playIcon.SetActive(false);
         zoomDistance = Mathf.Sqrt(Mathf.Pow(transform.position.x, 2) * 2);
     }
 
-    // Update is called once per frame
     void Update()
     {
         scroll = Input.mouseScrollDelta.y;
@@ -26,9 +24,9 @@ public class ZoomControl : MonoBehaviour
         if (scroll != 0)
         {
             transform.Translate((Vector3.forward * scroll * sensitivity) * zoomDistance);
-            if (transform.position.y < 5)
+            if (transform.position.y < 3)
             {
-                transform.position = new Vector3 (-5, 5, 0);
+                transform.position = new Vector3 (-3, 3, 0);
             } else if (transform.position.y > 100)
             {
                 transform.position = new Vector3 (-100, 100, 0);
@@ -49,5 +47,10 @@ public class ZoomControl : MonoBehaviour
             pauseIcon.SetActive(true);
             playIcon.SetActive(false);
         }
+    }
+
+    public void ResetCameraPosition()
+    {
+        transform.position = new Vector3 (-20, 20, 0);
     }
 }

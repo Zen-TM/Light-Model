@@ -1,20 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LightWaveScript : MonoBehaviour
 {
-    public float currentTime = 0f; 
+    public float currentTime; 
     public GameObject firstEFV; 
     public GameObject firstMFV;
-    private int n = 500;
-    public float seperatingDistance = 0.2f;
-    public float timeSpeed = 2;
-    public float amplitude = 2;
-    public float frequency = 0.5f;
+    private int n;
+    public float seperatingDistance;
+    public float timeSpeed;
+    public float amplitude;
+    public float frequency;
+    public Slider timeSpeedSlider;
+    public Slider amplitudeSlider;
+    public Slider frequencySlider;
 
     void Start()
     {
+        currentTime = 0f; 
+        n = 500;
+        seperatingDistance = 0.1f;
+        timeSpeed = 2;
+        amplitude = 2;
+        frequency = 0.5f;
+
         firstEFV.transform.position = new Vector3 (0, 0, - n * seperatingDistance / 2);
         firstMFV.transform.position = new Vector3 (0, 0, - n * seperatingDistance / 2);
 
@@ -58,5 +69,17 @@ public class LightWaveScript : MonoBehaviour
     public void ChangeTimeSpeed(float newTimeSpeed)
     {
         timeSpeed = Mathf.Pow(2, newTimeSpeed);
+    }
+
+    public void ResetWave()
+    {
+        currentTime = 0f; 
+        timeSpeed = 2;
+        amplitude = 2;
+        frequency = 0.5f;
+
+        timeSpeedSlider.value = 1;
+        amplitudeSlider.value = 1;
+        frequencySlider.value = -1;
     }
 }
