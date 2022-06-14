@@ -24,12 +24,12 @@ public class ZoomControl : MonoBehaviour
         if (scroll != 0)
         {
             transform.Translate((Vector3.forward * scroll * sensitivity) * zoomDistance);
-            if (transform.position.y < 3)
+            if (transform.position.x > -3)
             {
-                transform.position = new Vector3 (-3, 3, 0);
-            } else if (transform.position.y > 100)
+                transform.position = new Vector3 (-3, 0, 0);
+            } else if (transform.position.x < -100)
             {
-                transform.position = new Vector3 (-100, 100, 0);
+                transform.position = new Vector3 (-100, 0, 0);
             }
         }
     }

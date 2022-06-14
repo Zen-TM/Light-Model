@@ -49,6 +49,8 @@ public class LightWaveScript : MonoBehaviour
                 );
             newMFV.transform.parent = firstMFV.transform.parent;
         }
+
+        transform.Rotate(new Vector3 (0, 0, 20));
     }
 
     void Update()
