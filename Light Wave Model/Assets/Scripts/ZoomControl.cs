@@ -51,6 +51,6 @@ public class ZoomControl : MonoBehaviour
 
     public void ResetCameraPosition()
     {
-        transform.position = new Vector3 (-20, 20, 0);
+        transform.position = new Vector3 (-20, 0, 0);
     }
 }
